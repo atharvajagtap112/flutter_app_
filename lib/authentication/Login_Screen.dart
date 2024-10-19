@@ -161,9 +161,9 @@ else{
   validator: (value) {
     if (value == null ||
         value.trim().isEmpty ||
-        value.trim().length > 10 ||
-        value.trim().length < 4) {
-      return 'Password must be between 4 to 10 characters';
+      
+        value.trim().length < 6) {
+      return 'Password must be at least 6 characters';
     }
     return null;
   },
